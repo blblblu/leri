@@ -1,0 +1,23 @@
+{
+    "memo": "61fe6da8ad389f2f52708b14010128e36a887e086bdf453c695bf90bdad39a1b",
+    "projects": [
+        {
+            "name": "github.com/blblblu/asami",
+            "branch": "master",
+            "revision": "4ef1926836fd2a50ec8ba9f3182936653704fee7",
+            "packages": [
+                "lib/commands",
+                "lib/files",
+                "lib/sorting"
+            ]
+        },
+        {
+            "name": "github.com/urfave/cli",
+            "branch": "v2",
+            "revision": "e485446237011b8abac93919242e6f059ad56c87",
+            "packages": [
+                "."
+            ]
+        }
+    ]
+}
