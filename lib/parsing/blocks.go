@@ -1,5 +1,6 @@
 package parsing
 
-type Block interface {
-	AddChunk(chunk string)
+type block interface {
+	addChunk(chunk string)
+	serialize() string
 }
