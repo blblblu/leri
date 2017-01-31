@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/blblblu/sasdoc/lib/commands"
+	"github.com/blblblu/leri/lib/commands"
 	"github.com/urfave/cli"
 )
 
@@ -13,8 +13,11 @@ var (
 
 func main() {
 	app := cli.App{
-		Name:    "SASdoc",
-		Usage:   "a markdown documentation genarator for SAS files",
+		Name:  "leri",
+		Usage: "a markdown documentation genarator for source code files",
+		Authors: []*cli.Author{
+			{Name: "Sebastian Schulz", Email: "mail@sesc.me"},
+		},
 		Version: version,
 		Commands: []*cli.Command{
 			commands.NewGenMdCommand(),

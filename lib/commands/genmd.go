@@ -18,11 +18,11 @@ func NewGenMdCommand() *cli.Command {
 
 	return &cli.Command{
 		Name:  "gen",
-		Usage: "generate markdown documentation for a sas file",
+		Usage: "generate markdown documentation for a source file",
 		Flags: []cli.Flag{
 			&cli.StringFlag{
 				Name:        "input",
-				Usage:       "the SAS input file `path` to use",
+				Usage:       "the source input file `path` to use",
 				Aliases:     []string{"i"},
 				Destination: &args.input,
 			},
