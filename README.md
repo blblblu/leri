@@ -18,7 +18,7 @@ I used *leri* mainly to generate some tutorial-like documents from heavily docum
 go get github.com/blblblu/leri/cmd/leri
 ```
 
-(or download a pre-compiled version from the [https://github.com/blblblu/leri/releases](releases page))
+(or download a pre-compiled version from the [releases page](https://github.com/blblblu/leri/releases))
 
 ## usage example
 
