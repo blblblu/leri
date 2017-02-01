@@ -18,6 +18,8 @@ I used *leri* mainly to generate some tutorial-like documents from heavily docum
 go get github.com/blblblu/leri/cmd/leri
 ```
 
+(or download a pre-compiled version from the [https://github.com/blblblu/leri/releases](releases page))
+
 ## usage example
 
 Let's assume you have a file `lorem.go` with following content:
