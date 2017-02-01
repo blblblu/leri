@@ -43,41 +43,39 @@ type Cleanuper interface {
 
 When running `leri gen -i lorem.go -o lorem.md`, *leri* will recognize each comment that begins at the beginning of the line as documentation, and will create the following `lorem.md` file:
 
-~~~md
-```go
-package ecs
+    ```go
+    package ecs
 
-import "github.com/blblblu/reba/env"
+    import "github.com/blblblu/reba/env"
 
-```
+    ```
 
-Initer is used for Systems or Entities that want to initialized based on the env.Context before the main loop
+    Initer is used for Systems or Entities that want to initialized based on the env.Context before the main loop
 
-```go
-type Initer interface {
-  Init(ctx *env.Context)
-}
+    ```go
+    type Initer interface {
+      Init(ctx *env.Context)
+    }
 
-```
+    ```
 
-Updater is used for Systems that want to be involved in the main loop
+    Updater is used for Systems that want to be involved in the main loop
 
-```go
-type Updater interface {
-  Update(ctx *env.Context)
-}
+    ```go
+    type Updater interface {
+      Update(ctx *env.Context)
+    }
 
-```
+    ```
 
-Cleanuper is used for Systems that want to free resources (like e.g. deleting OpenGL buffer etc.)
+    Cleanuper is used for Systems that want to free resources (like e.g. deleting OpenGL buffer etc.)
 
-```go
-type Cleanuper interface {
-  Cleanup(ctx *env.Context)
-}
+    ```go
+    type Cleanuper interface {
+      Cleanup(ctx *env.Context)
+    }
 
-```
-~~~
+    ```
 
 which will look as follows:
 
