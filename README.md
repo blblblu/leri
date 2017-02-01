@@ -1,5 +1,7 @@
 # leri
 
+[![Powered By: GoReleaser](https://img.shields.io/badge/powered%20by-goreleaser-green.svg?style=flat-square)](https://github.com/goreleaser)
+
 a small (and currently quite limited) command line tool to generate markdown files from source code comments
 
 ## why?
