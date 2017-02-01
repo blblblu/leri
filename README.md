@@ -4,11 +4,11 @@ a small (and currently quite limited) command line tool to generate markdown fil
 
 ## why?
 
-I use it mainly to generate some tutorial-like documents from heavily documented source code.
+I used *leri* mainly to generate some tutorial-like documents from heavily documented source code.
 
 ## features
 
-leri currently only supports `.go` and `.sas` files, but could be extended easily by defining own regular expressions to match comments that should be interpreted as documentation, (see: `lib/parsing/parser.go` and parser usage in file `lib/commands/genmd.go`).
+*leri* currently only supports `.go` and `.sas` files, but could be extended easily by defining own regular expressions to match comments that should be interpreted as documentation, (see: `lib/parsing/parser.go` and parser usage in file `lib/commands/genmd.go`).
 
 ## installation
 
@@ -41,7 +41,7 @@ type Cleanuper interface {
 }
 ```
 
-running `leri gen -i lorem.go -o lorem.md` will create the following `lorem.md` file:
+When running `leri gen -i lorem.go -o lorem.md`, *leri* will recognize each comment that begins at the beginning of the line as documentation, and will create the following `lorem.md` file:
 
 ~~~md
 ```go
