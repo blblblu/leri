@@ -35,7 +35,7 @@ type Updater interface {
 	Update(ctx *env.Context)
 }
 
-// Cleanuper is used for Systems that want to free resources (like e.g. deleting OpenGL buffer etc.)
+// Cleanuper is used for Systems that want to free resources (like e.g. deleting OpenGL buffers etc.)
 type Cleanuper interface {
 	Cleanup(ctx *env.Context)
 }
@@ -68,7 +68,7 @@ When running `leri gen -i lorem.go -o lorem.md`, *leri* will recognize each `//`
 
     ```
 
-    Cleanuper is used for Systems that want to free resources (like e.g. deleting OpenGL buffer etc.)
+    Cleanuper is used for Systems that want to free resources (like e.g. deleting OpenGL buffers etc.)
 
     ```go
     type Cleanuper interface {
@@ -107,7 +107,7 @@ type Updater interface {
 
 ```
 
-Cleanuper is used for Systems that want to free resources (like e.g. deleting OpenGL buffer etc.)
+Cleanuper is used for Systems that want to free resources (like e.g. deleting OpenGL buffers etc.)
 
 ```go
 type Cleanuper interface {
