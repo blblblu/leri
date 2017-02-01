@@ -41,7 +41,7 @@ type Cleanuper interface {
 }
 ```
 
-When running `leri gen -i lorem.go -o lorem.md`, *leri* will recognize each comment that begins at the beginning of the line as documentation, and will create the following `lorem.md` file:
+When running `leri gen -i lorem.go -o lorem.md`, *leri* will recognize each `//` comment that starts at the beginning of the line as documentation, and will create the following `lorem.md` file:
 
     ```go
     package ecs
