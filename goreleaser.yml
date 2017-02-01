@@ -1,0 +1,25 @@
+build:
+  main: ./cmd/leri/main.go
+
+  binary_name: leri
+
+  ldflags: -s -w
+
+  goos:
+    - linux
+    - darwin
+    #- freebsd
+    #- openbsd
+    - windows
+
+  goarch:
+    - 386
+    - amd64
+
+archive:
+  name_template: "{{.BinaryName}}_{{.Version}}_{{.Os}}_{{.Arch}}"
+
+  format: zip
+
+release:
+  repo: blblblu/leri
