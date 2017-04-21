@@ -1,7 +1,7 @@
 build:
   main: ./cmd/leri/main.go
 
-  binary_name: leri
+  binary: leri
 
   ldflags: -s -w
 
@@ -22,4 +22,6 @@ archive:
   format: zip
 
 release:
-  repo: blblblu/leri
+  github: 
+    owner: blblblu
+    name: leri
